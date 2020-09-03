@@ -14,11 +14,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .hint{
+            color: white;
+            font-style: italic;
+        }
         .inputContainer{
             label{
                 display: block;
                 text-align: center;
                 margin: 1rem;
+            }
+            input{
+                width:100%;
             }
         }
         .loginButton{
