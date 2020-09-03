@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div class="loginContainer">
+    <div class="loginContainerBox">
+        <div class="loginBox">
+            <form autocomplete="off">
+                <div class="inputContainer">
+                    <label for="user">Usuario</label>
+                    <input autocomplete="new-text" name="user" type="text" [(ngModel)]="usuario">
+                </div>
+                <div class="inputContainer">
+                    <label for="password">Password</label>
+                    <input autocomplete="new-text" name="password" type="password" [(ngModel)]="password" >
+                </div>
+                <div class="inputContainer">
+                    <button class="loginButton" (click)="Login()">Loguear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
