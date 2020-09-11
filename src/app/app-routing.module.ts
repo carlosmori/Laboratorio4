@@ -1,14 +1,16 @@
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
-import {WelcomeComponent} from '../components/welcome/welcome.component'
 import {LoginComponent} from '../components/login/login.component'
 import {ErrorComponent} from '../components/error/error.component'
+import { BienvenidoComponent } from 'src/components/bienvenido/bienvenido.component';
+import { ControlEntidadComponent } from 'src/components/control-entidad/control-entidad.component';
 
 const routes: Routes = [
     {path: '' , component: LoginComponent},
     {path: 'login' , component: LoginComponent},
-    {path: 'welcome' , component: WelcomeComponent},
+    {path: 'bienvenido' , component: BienvenidoComponent},
+    {path: 'paises/listado' , component: ControlEntidadComponent},
     {path: '**', component: ErrorComponent }
   ];
 // configures NgModule imports and exports

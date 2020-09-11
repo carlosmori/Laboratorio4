@@ -1,0 +1,14 @@
+.bienvenido-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #060648;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .listar-paises-container{
+        a{
+            font-size: 2rem;
+            color: white;
+        }
+    }
+}

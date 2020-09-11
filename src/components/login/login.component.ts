@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     this.user = new Usuario(this.usuario, this.password);
     if(this.user.usuario === this.correctUser.usuario && this.correctUser.password === this.user.password){
       localStorage.setItem('user', JSON.stringify(this.user));
-      this.router.navigate(['/welcome']);
+      this.router.navigate(['/bienvenido']);
     }else{
       this.router.navigate(['/error']);
     }
