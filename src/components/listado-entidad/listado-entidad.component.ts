@@ -28,7 +28,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class ListadoEntidadComponent implements OnInit {
   @Input() listaPaises: any[];
 
-  displayedColumns: string[] = ['id', 'nombre', 'accion'];
+  displayedColumns: string[] = ['nombre', 'accion'];
   dataSource = ELEMENT_DATA;
   constructor(private _snackBar: MatSnackBar) { }
 
@@ -37,7 +37,7 @@ export class ListadoEntidadComponent implements OnInit {
       duration: 4000,
     });
   }
-  doSomething(pais:any){
+  abrirDetalle(pais:any){
     console.log(pais)
   }
 }
