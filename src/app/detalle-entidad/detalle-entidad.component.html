@@ -1,0 +1,9 @@
+<div class="detalle-entidad-container">
+    <div class="detalle" *ngIf="paisSeleccionado">
+        <h1>{{paisSeleccionado?.name}}</h1>
+        <img [src]="paisSeleccionado?.flag" alt="">
+        <h2>Capital: {{paisSeleccionado?.capital}}</h2>
+        <h3>Region: {{paisSeleccionado?.region}}</h3>
+        <button mat-raised-button color="warn" (click)="llamarEliminarEntidad()">Eliminar</button>
+    </div>
+</div>

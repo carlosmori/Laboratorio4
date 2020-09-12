@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule } from '@angular/router'; // CLI imports router
-import {Usuario} from '../../types/usuario'
+import {Usuario} from '../../../types/usuario'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

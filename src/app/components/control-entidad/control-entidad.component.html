@@ -1,0 +1,7 @@
+<div class="control-entidad-container">
+    <div class="listado-entidades">
+        <app-listado-entidad [listaPaises]="paises" (paisSeleccionado)="abrirDetalle($event)" title="Listado de Paises"></app-listado-entidad>
+        <app-listado-entidad [listaPaises]="paisesEliminados" (paisSeleccionado)="abrirDetalle($event)" title="Listado de Paises Eliminados"></app-listado-entidad>
+    </div>
+    <app-detalle-entidad [paisSeleccionado]="paisSeleccionado" (eliminarEntidad)="eliminarPais($event)" ></app-detalle-entidad>
+</div>

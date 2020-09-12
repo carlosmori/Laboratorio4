@@ -1,0 +1,13 @@
+:host { display:block; }
+.control-entidad-container{
+        width: 100vw;
+        height: 100vh;
+        background-color: #060648;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        app-listado-entidad,app-detalle-entidad{
+                width: 50vw;
+                height: 100%;
+        }
+}
